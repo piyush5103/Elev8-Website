@@ -5,9 +5,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="fullpagejs/dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
 
 	<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
-	<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+	<!--<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>-->
+
 
 	<title>Team 7539</title>
 </head>
@@ -15,30 +17,42 @@
 <body>
 
 
+	<div id="header">
+		<h3 style="padding-top: 10px;">Navbar goes here. Home, About, Outreach, Contact etc.</h3>
+	</div>
+
 	<div id="fullpage">
-		<div class="section active" id="section0">
-			<h1>Home</h1>
+		<div class="home-sample-section section active" id="section0">
+			<h1>Hero section</h1>
+			<p>Embedded CAD of robot?</p>
+			<p>Team photo?</p>
+			<p>Etc.</p>
 		</div>
-		<div class="section" id="section1">
-			<div class="slide ">
-				<h1>About</h1>
+		<div class="home-sample-section section" id="section1">
+			<h1>About section</h1>
+		</div>
+		<div class="home-sample-section section" id="section2">
+			<h1>Outreach section</h1>
+		</div>
+		<div class="home-sample-section section" id="section3">
+			<h1>Contact form and 'footer'</h1>
+		</div>
+		<div class="section" id="section4">
+			<div class="home-sample-section slide active">
+				<h1>Sample slider</h1>
+				<p>Slide 1</p>
 			</div>
-			<div class="slide active">
-				<h1> text</h1>
+			<div class="home-sample-section slide">
+				<p>Slide 2</p>
 			</div>
-			<div class="slide">
-				<h1> text</h1>
+			<div class="home-sample-section slide">
+				<p>Slide 3</p>
 			</div>
-			<div class="slide">
-				<h1>  text</h1>
+			<div class="home-sample-section slide">
+				<p>Slide 4</p>
 			</div>
 		</div>
-		<div class="section" id="section2">
-			<h1>Other stuff</h1>
-		</div>
-		<div class="section" id="section3">
-			<h1>Contact or smth</h1>
-		</div>
+
 	</div>
 
 
@@ -46,17 +60,21 @@
 	<script type="text/javascript" src="fullpagejs/dist/fullpage.js"></script>
 	<script type="text/javascript">
 		var myFullpage = new fullpage('#fullpage', {
-			sectionsColor: ['lightblue', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+			//sectionsColor: ['lightblue', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
 			menu: '#menu',
 			lockAnchors: false,
 			anchors: ['home', 'about'],
 			navigation: true,
 			navigationPosition: 'right',
-			navigationTooltips: ['Home', 'About'],
+			navigationTooltips: ['Home', 'About', 'Outreach', 'Contact', 'Sample Slides'],
 			showActiveTooltip: false,
 			slidesNavigation: true,
 			slidesNavPosition: 'bottom'
 		});
+
+
+
+
 	</script>
 
 
