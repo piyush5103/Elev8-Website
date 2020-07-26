@@ -1,71 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="fullpagejs/dist/fullpage.css" />
 
-    <title>Team 7539</title>
-  </head>
-  <body>
-    <header>
-  <div class="container">
-    <nav class="navbar navbar-expand-md no-gutters">
-      <div class="col-2 text-left">
-        <a href="#">
-          <h1>Logo goes here</h1>
-        </a>
-      </div>
+	<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+	<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+	<title>Team 7539</title>
+</head>
 
-      <div class="collapse navbar-collapse justify-content-center col-md-8" id="navbarNav4">
-        <ul class="navbar-nav justify-content-center">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Outreach</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">2019 DESTINATION: DEEP SPACE</a>
-          </li>
-        </ul>
-      </div>
+<body>
 
-      <ul class="navbar-nav col-2 justify-content-end d-none d-md-flex">
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.facebook.com/team7539/"><i class="fab fa-facebook"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.instagram.com/7539teamelev8/"><i class="fab fa-instagram"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://twitter.com/7539TeamElev8"><i class="fab fa-twitter"></i></a>
-        </li>
-        
-        
-      </ul>
-    </nav>
-  </div>
-</header>
-    
-    
-    
-    
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+	<div id="fullpage">
+		<div class="section active" id="section0">
+			<h1>Home</h1>
+		</div>
+		<div class="section" id="section1">
+			<div class="slide ">
+				<h1>About</h1>
+			</div>
+			<div class="slide active">
+				<h1> text</h1>
+			</div>
+			<div class="slide">
+				<h1> text</h1>
+			</div>
+			<div class="slide">
+				<h1>  text</h1>
+			</div>
+		</div>
+		<div class="section" id="section2">
+			<h1>Other stuff</h1>
+		</div>
+		<div class="section" id="section3">
+			<h1>Contact or smth</h1>
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript" src="fullpagejs/dist/fullpage.js"></script>
+	<script type="text/javascript">
+		var myFullpage = new fullpage('#fullpage', {
+			sectionsColor: ['lightblue', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+			menu: '#menu',
+			lockAnchors: false,
+			anchors: ['home', 'about'],
+			navigation: true,
+			navigationPosition: 'right',
+			navigationTooltips: ['Home', 'About'],
+			showActiveTooltip: false,
+			slidesNavigation: true,
+			slidesNavPosition: 'bottom'
+		});
+	</script>
+
+
+</body>
+
 </html>
