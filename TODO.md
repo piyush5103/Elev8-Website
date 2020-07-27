@@ -20,7 +20,7 @@
 
 ## Navbar + Footer
 - [ ] Change the home icon to our logo's "8"?
-- [ ] Update the footer with proper links
+- [x] Update the footer with proper links
 
 ## Other + Pipe Dreams
 - [ ] Improve the reading experience
