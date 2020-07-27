@@ -10,7 +10,10 @@ export const Post = styled.div`
 `;
 
 export const Card = styled.div`
-  ${tw`w-full h-full rounded-lg flex flex-col overflow-hidden border border-gray-300`};
+  ${tw`w-full h-full rounded-lg flex flex-col overflow-hidden`};
+  margin: 1em 1em;
+  background: white;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
 `;
 
 export const Content = styled.div`
