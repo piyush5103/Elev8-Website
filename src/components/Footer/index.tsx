@@ -1,26 +1,45 @@
 import React from 'react';
 
 import Container from 'components/ui/Container';
+import Icon from 'components/ui/Icon';
 
 import * as Styled from './styles';
+import { faGithub, faInstagram, faYoutube, faSlack, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import FirstLogo from './FirstLogo';
+
 
 const Footer: React.FC = () => (
   <Styled.Footer>
     <Container>
       <Styled.Links>
         <Styled.Link href="/" rel="noreferrer noopener" target="_blank">
-          GitHub
-        </Styled.Link>
-        <Styled.Link
-          href="https://github.com/SaimirKapaj/gatsby-markdown-typescript-personal-website"
-          rel="noreferrer noopener"
-          target="_blank"
-        >
-          Twitter
+          <Styled.Icon>
+            <Icon icon={faGithub} />
+          </Styled.Icon>
         </Styled.Link>
         <Styled.Link href="/" rel="noreferrer noopener" target="_blank">
-          Behance
+          <Styled.Icon>
+            <Icon icon={faInstagram} />
+          </Styled.Icon>
         </Styled.Link>
+        <Styled.Link href="/" rel="noreferrer noopener" target="_blank">
+          <Styled.Icon>
+            <Icon icon={faYoutube} />
+          </Styled.Icon>
+        </Styled.Link>
+        <Styled.Link href="/" rel="noreferrer noopener" target="_blank">
+          <Styled.Icon>
+            <Icon icon={faSlack} />
+          </Styled.Icon>
+        </Styled.Link>
+        <Styled.Link href="/" rel="noreferrer noopener" target="_blank">
+          <Styled.Icon>
+            <Icon icon={faFacebook} />
+          </Styled.Icon>
+        </Styled.Link>
+      </Styled.Links>
+      <Styled.Links>
+        <FirstLogo />
       </Styled.Links>
     </Container>
   </Styled.Footer>

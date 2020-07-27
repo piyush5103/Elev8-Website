@@ -1,12 +1,12 @@
 # TODO
 ## Index/Home Page
-- [ ] Change the services section (maybe we can put in details about each subteam?)
+- [ ] Change the services section (maybe we can put in details about each sub-team?)
 - [ ] Change the Carousel to something different
 - [ ] Decide whether to keep the mailing list or not (probably not)
 
 ## About Page
 - [ ] Decide what to make each timeline show (one can be awards, one can be events?)
-- [ ] We can make the progress bars show how our team is divided up in subteams?
+- [ ] We can make the progress bars show how our team is divided up in sub-teams?
 
 ## Blog
 - [ ] We should just fix a few tags, like Events, Outreach, etc.
