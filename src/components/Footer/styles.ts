@@ -26,9 +26,9 @@ export const Link = motion.custom(styled.a`
   background: white;
   color: #667eea;
   
-  :hover {
-    color: white;
-    transition: 150ms ease-in-out;
-    background: #667eea;
-  }
+  // :hover {
+  //   color: white;
+  //   transition: 150ms ease-in-out;
+  //   background: #667eea;
+  // }
   `;
