@@ -11,13 +11,13 @@ export const Post = styled.div`
 
 export const Card = styled.div`
   ${tw`w-full h-full rounded-lg flex flex-col overflow-hidden`};
-  margin: 0 1em;
+
   background: white;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
   transition: transform 150ms ease-in-out;
   
   :hover {
-    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
     transition: transform 400ms ease-in-out;
   }
 `;
