@@ -14,6 +14,7 @@ export const Button = motion.custom(styled.button<StyledProps>`
   ${({ primary }) => (primary ? tw`bg-teal-300` : tw`text-indigo-600`)};
 
   ${({ block }) => block && tw`w-full`};
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
 
   span {
     margin-left: 1em;
@@ -23,6 +24,8 @@ export const Button = motion.custom(styled.button<StyledProps>`
   }
 
   &:hover {
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+
     span {
       transform: translateX(0px);
       opacity: 1;

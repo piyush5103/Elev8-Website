@@ -11,7 +11,7 @@ export const Post = styled.div`
 
 export const Card = styled.div`
   ${tw`w-full h-full rounded-lg flex flex-col overflow-hidden`};
-  margin: 1em 1em;
+  margin: 0 1em;
   background: white;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
 `;
@@ -39,5 +39,5 @@ export const Tags = styled.div`
 `;
 
 export const Tag = styled.span`
-  ${tw`text-xs text-indigo-900 border border-teal-400 rounded-full px-2 py-1 mr-2`}
+  ${tw`text-xs text-indigo-900 bg-teal-200 rounded-md px-2 py-1 mr-2`}
 `;
