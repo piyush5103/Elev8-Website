@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import tw from 'tailwind.macro';
+import { Link } from "gatsby"
 
 export const Title = styled.h3`
   ${tw`font-semibold mb-4`};
@@ -11,15 +12,19 @@ export const Image = styled.figure`
 
 export const Links = styled.div`
   ${tw`w-full flex justify-between mt-10`};
+`;
 
-  #right {
+export const NavLink = styled(Link)`
+  ${tw`w-full flex justify-between mt-10`};
+  
+  #next {
     margin-left: 1em;
     transform: translateX(-8px);
     display: inline-block;
     transition: transform 400ms ease-in-out;
   }
 
-  #left {
+  #prev {
     margin-right: 1em;
     transform: translateX(8px);
     display: inline-block;
@@ -27,13 +32,7 @@ export const Links = styled.div`
   }
 
   &:hover {
-    #right {
-      transform: translateX(0px);
-      opacity: 1;
-      transition: transform 150ms ease-in-out;
-    }
-
-    #left {
+    #next, #prev {
       transform: translateX(0px);
       opacity: 1;
       transition: transform 150ms ease-in-out;

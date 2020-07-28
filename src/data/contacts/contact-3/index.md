@@ -2,5 +2,5 @@
 category: 'contact'
 title: 'Email'
 icon: 'paper-plane'
-content: 'greatgatsby@gmail.com'
+content: '7539elev8@gmail.com'
 ---

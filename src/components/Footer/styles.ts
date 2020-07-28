@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import tw from 'tailwind.macro';
+import { motion } from "framer-motion";
 
 export const Footer = styled.footer`
   ${tw`py-4`};
@@ -13,21 +14,21 @@ export const Links = styled.div`
   }
 `;
 
-export const Link = styled.a`
+export const Link = motion.custom(styled.a`
   ${tw`text-indigo-900 hover:text-indigo-600 mx-2`};
-`;
-
-export const Icon = styled.span`
-  ${tw`flex items-center justify-center w-10 h-10 text-indigo-500 bg-white mb-2`};
+  `);
+  
+  export const Icon = styled.span`
+  ${tw`flex items-center justify-center w-10 h-10 text-indigo-500 mb-2`};
+  transition: 400ms ease-in-out;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  transform: scale(1);
-  transition: transform 400ms ease-in-out;
-
+  background: white;
+  color: #667eea;
+  
   :hover {
-    transform: scale(1.2);
-    ${tw`flex items-center justify-center w-10 h-10 text-white mb-2 bg-indigo-500`};
-    transition: transform 150ms ease-in-out;
-
+    color: white;
+    transition: 150ms ease-in-out;
+    background: #667eea;
   }
-`;
+  `;

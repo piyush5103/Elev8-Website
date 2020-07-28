@@ -1,12 +1,12 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Link from 'gatsby-link';
 
 import Layout from 'components/Layout';
 import SEO from 'components/SEO';
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
 import FormatHtml from 'components/utils/FormatHtml';
+import Newsletter from "components/Newsletter"
 
 import * as Styled from './styles';
 
@@ -45,22 +45,23 @@ const BlogPost: React.FC<Props> = ({ data, pageContext }) => {
         <Styled.Links>
           <span>
             {previous && (
-              <Link to={previous.fields.slug} rel="previous">
-                <span id="left">&#8592;</span>
+              <Styled.NavLink to={previous.fields.slug} rel="previous">
+                <span id="prev">&#8592;</span>
                 {previous.frontmatter.title}
-              </Link>
+              </Styled.NavLink>
             )}
           </span>
           <span>
             {next && (
-              <Link to={next.fields.slug} rel="next">
+              <Styled.NavLink to={next.fields.slug} rel="next">
                 {next.frontmatter.title}
-                <span id="right">&#8594;</span>
-              </Link>
+                <span id="next">&#8594;</span>
+              </Styled.NavLink>
             )}
           </span>
         </Styled.Links>
       </Container>
+      <Newsletter />
     </Layout>
   );
 };

@@ -7,6 +7,7 @@ import TitleSection from 'components/ui/TitleSection';
 import { IconProps } from 'components/ui/Icon';
 
 import { SectionTitle } from 'helpers/definitions';
+import ContactCard from "components/ContactCard"
 
 import * as Styled from './styles';
 
@@ -63,6 +64,7 @@ const ConctactInfo: React.FC = () => {
           </Styled.ContactInfoItem>
         );
       })}
+      <ContactCard />
     </Container>
   );
 };

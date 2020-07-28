@@ -5,6 +5,7 @@ import SEO from 'components/SEO';
 import Experience from 'components/Experience';
 import Education from 'components/Education';
 import Skills from 'components/Skills';
+import Newsletter from "components/Newsletter"
 
 const AboutPage: React.FC = () => (
   <Layout>
@@ -14,6 +15,7 @@ const AboutPage: React.FC = () => (
     <Education />
     <hr />
     <Skills />
+    <Newsletter />
   </Layout>
 );
 

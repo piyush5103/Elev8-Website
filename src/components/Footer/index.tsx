@@ -12,27 +12,57 @@ const Footer: React.FC = () => (
   <Styled.Footer>
     <Container>
       <Styled.Links>
-        <Styled.Link href="/" rel="noreferrer noopener" target="_blank">
+        <Styled.Link
+          href="/"
+          rel="noreferrer noopener"
+          target="_blank"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+        >
           <Styled.Icon>
             <Icon icon={faGithub} />
           </Styled.Icon>
         </Styled.Link>
-        <Styled.Link href="/" rel="noreferrer noopener" target="_blank">
+        <Styled.Link
+          href="/"
+          rel="noreferrer noopener"
+          target="_blank"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+        >
           <Styled.Icon>
             <Icon icon={faInstagram} />
           </Styled.Icon>
         </Styled.Link>
-        <Styled.Link href="/" rel="noreferrer noopener" target="_blank">
+        <Styled.Link
+          href="/"
+          rel="noreferrer noopener"
+          target="_blank"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+        >
           <Styled.Icon>
             <Icon icon={faYoutube} />
           </Styled.Icon>
         </Styled.Link>
-        <Styled.Link href="/" rel="noreferrer noopener" target="_blank">
+        <Styled.Link
+          href="/"
+          rel="noreferrer noopener"
+          target="_blank"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+        >
           <Styled.Icon>
             <Icon icon={faSlack} />
           </Styled.Icon>
         </Styled.Link>
-        <Styled.Link href="/" rel="noreferrer noopener" target="_blank">
+        <Styled.Link
+          href="/"
+          rel="noreferrer noopener"
+          target="_blank"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+        >
           <Styled.Icon>
             <Icon icon={faFacebook} />
           </Styled.Icon>
