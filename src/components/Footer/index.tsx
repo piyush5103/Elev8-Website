@@ -35,7 +35,7 @@ const Footer: React.FC = () => (
           </Styled.Icon>
         </Styled.Link>
         <Styled.Link
-          href="/"
+          href="https://www.instagram.com/7539teamelev8/"
           rel="noreferrer noopener"
           target="_blank"
           whileHover={{ scale: 1.1 }}
@@ -46,7 +46,7 @@ const Footer: React.FC = () => (
           </Styled.Icon>
         </Styled.Link>
         <Styled.Link
-          href="/"
+          href="https://www.youtube.com/channel/UCsyFy_yFugPpYI08NQgjQnw"
           rel="noreferrer noopener"
           target="_blank"
           whileHover={{ scale: 1.1 }}
@@ -57,7 +57,7 @@ const Footer: React.FC = () => (
           </Styled.Icon>
         </Styled.Link>
         <Styled.Link
-          href="/"
+          href="https://www.facebook.com/team7539/"
           rel="noreferrer noopener"
           target="_blank"
           whileHover={{ scale: 1.1 }}
